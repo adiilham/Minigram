@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.dashboard.DashboardFragment">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <ImageView
+        android:id="@+id/btn_camera"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_add"
+        app:layout_constraintBottom_toBottomOf="@+id/image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <EditText
+        android:id="@+id/desc_value"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@drawable/shape_square_frame"
+        android:hint="Write your description"
+        android:fontFamily="@font/glacial"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        android:imeOptions="actionDone"
+        android:gravity="start"
+        android:padding="10dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        app:layout_constraintTop_toBottomOf="@id/image"/>
+
+    <Spinner
+        android:id="@+id/spinner_lay"
+        android:layout_width="160dp"
+        android:layout_height="42dp"
+        android:background="@drawable/shape_square_frame"
+        android:popupBackground="@drawable/shape_square_frame"
+        android:spinnerMode="dropdown"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/desc_value"/>
+
+    <ImageView
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:src="@drawable/ic_down"
+        android:padding="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/spinner_lay"
+        app:layout_constraintTop_toTopOf="@id/spinner_lay"
+        app:layout_constraintBottom_toBottomOf="@id/spinner_lay"/>
+
+    <TextView
+        android:id="@+id/btn_posting"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:background="@drawable/shape_button_solid"
+        android:fontFamily="@font/glacial"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:textColor="@android:color/white"
+        android:text="Posting"
+        android:gravity="center"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintTop_toBottomOf="@id/spinner_lay"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
