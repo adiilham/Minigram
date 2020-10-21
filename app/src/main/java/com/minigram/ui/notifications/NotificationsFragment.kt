@@ -45,7 +45,6 @@ import java.util.*
 class NotificationsFragment : Fragment() {
 
     private val pickImageRequest = 111
-
     private val verticalAdapter = PostingVerticalAdapter()
     private val gridAdapter = PostingGridAdapter()
 
