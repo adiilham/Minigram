@@ -1,4 +1,4 @@
-package com.minigram.ui.dashboard
+package com.minigram.ui
 
 import android.annotation.SuppressLint
 import android.app.Activity.RESULT_OK

@@ -7,19 +7,19 @@
 
     <fragment
         android:id="@+id/navigation_home"
-        android:name="com.minigram.ui.home.HomeFragment"
+        android:name="com.minigram.ui.HomeFragment"
         android:label="Home"
         tools:layout="@layout/fragment_home" />
 
     <fragment
         android:id="@+id/navigation_dashboard"
-        android:name="com.minigram.ui.dashboard.DashboardFragment"
+        android:name="com.minigram.ui.DashboardFragment"
         android:label="Posting"
         tools:layout="@layout/fragment_dashboard" />
 
     <fragment
         android:id="@+id/navigation_notifications"
-        android:name="com.minigram.ui.notifications.NotificationsFragment"
+        android:name="com.minigram.ui.NotificationsFragment"
         android:label="Profile"
         tools:layout="@layout/fragment_notifications" />
 

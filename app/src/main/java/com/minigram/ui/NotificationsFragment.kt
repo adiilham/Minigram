@@ -1,4 +1,4 @@
-package com.minigram.ui.notifications
+package com.minigram.ui
 
 import android.annotation.SuppressLint
 import android.app.Activity
@@ -18,7 +18,6 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.fragment.app.Fragment
-import androidx.navigation.Navigation
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
